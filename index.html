@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Logo Slider</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #f9f9f9;
+      font-family: Arial, sans-serif;
+      padding: 40px 20px;
+    }
+
+    .slider-container {
+      overflow: hidden;
+      width: 100%;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      padding: 20px 0;
+    }
+
+    .logo-slider {
+      display: flex;
+      animation: scroll 20s linear infinite;
+      width: fit-content;
+    }
+
+    .logo-slider img {
+      width: 150px;
+      height: auto;
+      margin: 0 30px;
+      object-fit: contain;
+      transition: transform 0.3s;
+    }
+
+    .logo-slider img:hover {
+      transform: scale(1.1);
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* Duplicate logos for infinite effect */
+    .logo-slider-wrapper {
+      display: flex;
+      width: max-content;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="slider-container">
+    <div class="logo-slider">
+      <div class="logo-slider-wrapper">
+        <!-- Add your logos below -->
+        <img src="/img/brand2.svg" alt="Logo 1">
+        <img src="/img/brand3.svg" alt="Logo 2">
+        <img src="/img/brand4.svg" alt="Logo 3">
+        <img src="/img/brand5.svg" alt="Logo 4">
+        <img src="/img/brand6.svg" alt="Logo 5">
+        <img src="/img/brand7.svg" alt="Logo 5">
+        <!-- Duplicate logos for seamless scrolling -->
+        <!-- <img src="https://via.placeholder.com/150x80?text=Logo+1" alt="Logo 1">
+        <img src="https://via.placeholder.com/150x80?text=Logo+2" alt="Logo 2">
+        <img src="https://via.placeholder.com/150x80?text=Logo+3" alt="Logo 3">
+        <img src="https://via.placeholder.com/150x80?text=Logo+4" alt="Logo 4">
+        <img src="https://via.placeholder.com/150x80?text=Logo+5" alt="Logo 5"> -->
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
