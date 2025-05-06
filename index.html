@@ -1,9 +1,10 @@
+<!-- logo slider part start -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Logo Slider</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smooth Infinite Logo Slider</title>
   <style>
     * {
       box-sizing: border-box;
@@ -12,28 +13,25 @@
     }
 
     body {
-      background: #f9f9f9;
       font-family: Arial, sans-serif;
-      padding: 40px 20px;
+      background: #f9f9f9;
     }
 
     .slider-container {
       overflow: hidden;
-      width: 100%;
       background-color: #fff;
-      border: 1px solid #ddd;
       padding: 20px 0;
+      width: 100%;
     }
 
     .logo-slider {
       display: flex;
-      animation: scroll 20s linear infinite;
-      width: fit-content;
+      width: max-content;
+      animation: scroll 25s linear infinite;
     }
 
     .logo-slider img {
       width: 150px;
-      height: auto;
       margin: 0 30px;
       object-fit: contain;
       transition: transform 0.3s;
@@ -44,14 +42,12 @@
     }
 
     @keyframes scroll {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
-    }
-
-    /* Duplicate logos for infinite effect */
-    .logo-slider-wrapper {
-      display: flex;
-      width: max-content;
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
     }
   </style>
 </head>
@@ -59,23 +55,47 @@
 
   <div class="slider-container">
     <div class="logo-slider">
-      <div class="logo-slider-wrapper">
-        <!-- Add your logos below -->
-        <img src="/img/brand2.svg" alt="Logo 1">
-        <img src="/img/brand3.svg" alt="Logo 2">
-        <img src="/img/brand4.svg" alt="Logo 3">
-        <img src="/img/brand5.svg" alt="Logo 4">
-        <img src="/img/brand6.svg" alt="Logo 5">
-        <img src="/img/brand7.svg" alt="Logo 5">
-        <!-- Duplicate logos for seamless scrolling -->
-        <!-- <img src="https://via.placeholder.com/150x80?text=Logo+1" alt="Logo 1">
-        <img src="https://via.placeholder.com/150x80?text=Logo+2" alt="Logo 2">
-        <img src="https://via.placeholder.com/150x80?text=Logo+3" alt="Logo 3">
-        <img src="https://via.placeholder.com/150x80?text=Logo+4" alt="Logo 4">
-        <img src="https://via.placeholder.com/150x80?text=Logo+5" alt="Logo 5"> -->
-      </div>
+      <!-- Original set -->
+      <img src="https://htmldemo.net/bagse/bagse/assets/images/patner-brand/brand1.svg" alt="Logo 1">
+      <img src="https://htmldemo.net/bagse/bagse/assets/images/patner-brand/brand2.svg" alt="Logo 2">
+      <img src="https://htmldemo.net/bagse/bagse/assets/images/patner-brand/brand3.svg" alt="Logo 3">
+      <img src="https://htmldemo.net/bagse/bagse/assets/images/patner-brand/brand4.svg" alt="Logo 4">
+      <img src="https://htmldemo.net/bagse/bagse/assets/images/patner-brand/brand5.svg" alt="Logo 5">
+      <img src="https://htmldemo.net/bagse/bagse/assets/images/patner-brand/brand7.svg" alt="Logo 6">
+      <img src="https://htmldemo.net/bagse/bagse/assets/images/patner-brand/brand6.svg" alt="Logo 7">
+
+      <!-- Duplicated set for seamless loop -->
+      <img src="https://htmldemo.net/bagse/bagse/assets/images/patner-brand/brand1.svg" alt="Logo 1 duplicate">
+      <img src="https://htmldemo.net/bagse/bagse/assets/images/patner-brand/brand2.svg" alt="Logo 2 duplicate">
+      <img src="https://htmldemo.net/bagse/bagse/assets/images/patner-brand/brand3.svg" alt="Logo 3 duplicate">
+      <img src="https://htmldemo.net/bagse/bagse/assets/images/patner-brand/brand4.svg" alt="Logo 4 duplicate">
+      <img src="https://htmldemo.net/bagse/bagse/assets/images/patner-brand/brand5.svg" alt="Logo 5 duplicate">
+      <img src="https://htmldemo.net/bagse/bagse/assets/images/patner-brand/brand7.svg" alt="Logo 6 duplicate">
+      <img src="https://htmldemo.net/bagse/bagse/assets/images/patner-brand/brand6.svg" alt="Logo 7 duplicate">
     </div>
   </div>
 
 </body>
 </html>
+<!-- logo slider part end -->
+
+<!-- spacer -->
+<section style="height: 20vh;"></section>
+<!-- spacer -->
+
+<!-- Map Section start -->
+<section style="padding: 0; background-color: #f5f5f5;">
+    <div style="max-width: 2600px; margin: 0 auto; text-align: center;">
+      <div style="position: relative; overflow: hidden; padding-top: 28.125%; height: 0;">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15722319.699609578!2d-96.69380122258204!3d41.388580424174556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87ee5e6ff1f86019%3A0xc6ef634a57c759d9!2sIowa%2C%20USA!5e0!3m2!1sen!2sbd!4v1746546008821!5m2!1sen!2sbd"
+          style="border:0; position:absolute; top:0; left:0; width:100%; height:100%;"
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+  <!-- Map Section end -->
+  
